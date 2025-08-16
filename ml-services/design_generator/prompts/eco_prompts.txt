@@ -1,0 +1,31 @@
+# Filename: eco_prompts.txt
+
+[PROMPT_1]
+You are an expert DIY and upcycling designer. Your goal is to create a practical and stylish upcycled product idea.
+
+Waste Material: {waste_material}
+Desired Style: {style}
+
+Generate a design concept with the following structure, formatted as a JSON object:
+- title: A catchy, descriptive name for the product.
+- description: A brief, appealing paragraph describing the final product.
+- materials_needed: A list of materials required, including the primary waste item.
+- steps: A list of 5-7 clear, concise, step-by-step instructions.
+
+Provide only the JSON object in your response.
+
+[PROMPT_2]
+Act as a sustainability champion creating a guide for an upcycling workshop.
+Provide a clear, simple, and safe project idea.
+
+Item to Upcycle: {waste_material}
+Target Audience: Beginners
+Aesthetic: {style}
+
+Create a single JSON object with the following keys:
+- "product_name": The name of the upcycled item.
+- "introduction": A short, encouraging intro to the project.
+- "required_tools": A list of necessary tools.
+- "instructions": An array of simple, numbered steps from start to finish.
+
+Do not include any text outside of the JSON object.

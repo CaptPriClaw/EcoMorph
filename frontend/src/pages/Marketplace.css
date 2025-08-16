@@ -1,0 +1,33 @@
+/* src/pages/Marketplace.css */
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.marketplace-page .page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.marketplace-page .page-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: grid;
+  /* Creates a responsive grid that adjusts the number of columns */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  font-size: 1.2rem;
+}

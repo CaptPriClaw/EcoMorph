@@ -1,0 +1,29 @@
+# requirements.txt
+
+# --- Web Framework & Server ---
+fastapi
+uvicorn[standard]  # ASGI server with performance extras
+
+# --- Database ---
+SQLAlchemy
+psycopg2-binary    # PostgreSQL driver. For SQLite, this is not needed.
+
+# --- Data Validation & Settings ---
+pydantic[email]    # For data validation and loading settings from .env
+python-dotenv      # For reading the .env file
+
+# --- Authentication & Security ---
+passlib[bcrypt]    # For hashing passwords
+python-jose[cryptography] # For creating and verifying JWT tokens
+
+# --- ML - Core Libraries ---
+pandas             # For data manipulation and analysis
+numpy              # For numerical operations
+scikit-learn       # For data splitting, metrics, and ML models
+joblib             # For saving and loading trained models
+
+# --- ML - Specific Models ---
+xgboost            # For the credit predictor model
+nltk               # For natural language processing in the recommender
+openai             # For the AI design generator using GPT models
+Pillow             # For handling image data for the residual classifier

@@ -1,0 +1,103 @@
+/* src/pages/Dashboard.css */
+
+.dashboard {
+  background-color: #f9f9f9;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.dashboard-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-form .form-group input,
+.dashboard-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-message {
+  margin-top: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+/* List & Table Styles */
+.submission-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.submission-list th,
+.submission-list td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.status-approved {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+}
+
+.status-pending_verification {
+  color: #ff8f00;
+  background-color: #fff8e1;
+}
+
+.status-rejected {
+  color: #c62828;
+  background-color: #ffcdd2;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+}

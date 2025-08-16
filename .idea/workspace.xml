@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9803cfd-e6ae-4eb2-b781-3f2100864f75" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/EcoMorph.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/Styles/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/api/apiClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/components/app-shell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/components/data-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/dashboard-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/login-view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/waste-approval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/point_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/schemas/transaction_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/marketplace_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/product_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/user_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/utils/security.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/utils/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/apiClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/pointService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/productService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/wasteService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/ecomorph-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Modal.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/useAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AuthForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Marketplace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ProductView.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml-services/recommender_system/build_recommender.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ml-services/residual_classifier/create_sample_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/backend/test_points.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/backend/test_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/backend/test_users.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/backend/test_waste.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="30trbOwWBoMCmrDWsNtzHZhJ8kC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.build_recommender.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="build_recommender" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EcoMorph" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ml-services/recommender_system" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ml-services/recommender_system/build_recommender.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.build_recommender" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9803cfd-e6ae-4eb2-b781-3f2100864f75" name="Changes" comment="" />
+      <created>1754457781004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1754457781004</updated>
+    </task>
+    <servers />
+  </component>
+</project>

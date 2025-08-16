@@ -1,0 +1,22 @@
+# .gitignore
+
+# --- Python ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- Node.js ---
+node_modules/
+dist/
+.npm/
+npm-debug.log*
+
+# --- Environment Files (IMPORTANT!) ---
+# Never commit your secrets!
+.env
+*.env.local
+
+# --- IDE & OS Files ---
+.idea/
+.vscode/
+.DS_Store
