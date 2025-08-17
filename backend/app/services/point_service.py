@@ -3,8 +3,8 @@
 from sqlalchemy.orm import Session
 from sqlalchemy.sql import func
 
-from app.models import points as points_model
-from app.models.points import PointReason
+from ..models import points as points_model
+from ..models.points import PointReason
 
 # Define the value of different actions
 POINT_VALUES = {

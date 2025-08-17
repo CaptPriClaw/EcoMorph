@@ -3,9 +3,9 @@
 from sqlalchemy.orm import Session
 from typing import Optional
 
-from app.models import waste as waste_model
-from app.schemas import waste_schema
-from app.models.waste import WasteStatus
+from ..models import waste as waste_model
+from ..schemas import waste_schema
+from ..models.waste import WasteStatus
 
 def create_waste(db: Session, waste: waste_schema.WasteCreate, uploader_id: int) -> waste_model.Waste:
     db_waste = waste_model.Waste(**waste.dict(), uploader_id=uploader_id)

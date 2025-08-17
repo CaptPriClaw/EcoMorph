@@ -4,11 +4,11 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.schemas import waste_schema, user_schema
-from app.services import waste_service, point_service
-from app.database import get_db
-from app.services.auth_service import get_current_active_user
-from app.models.points import PointReason
+from ..schemas import waste_schema, user_schema
+from ..services import waste_service, point_service
+from ..database import get_db
+from ..services.auth_service import get_current_active_user
+from ..models.points import PointReason
 
 router = APIRouter(
     prefix="/waste",

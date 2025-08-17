@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from typing import List
 
-from app.schemas import user_schema, point_schema
-from app.services import point_service
-from app.database import get_db
-from app.services.auth_service import get_current_active_user
+from ..schemas import user_schema, point_schema
+from ..services import point_service
+from ..database import get_db
+from ..services.auth_service import get_current_active_user
 
 router = APIRouter(
     prefix="/points",

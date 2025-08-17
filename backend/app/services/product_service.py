@@ -3,9 +3,9 @@
 from sqlalchemy.orm import Session
 from typing import Optional
 
-from app.models import product as product_model
-from app.schemas import product_schema
-from app.models.product import ProductStatus
+from ..models import product as product_model
+from ..schemas import product_schema
+from ..models.product import ProductStatus
 
 def create_product(db: Session, product: product_schema.ProductCreate, upcycler_id: int) -> product_model.Product:
     db_product = product_model.Product(**product.dict(), upcycler_id=upcycler_id)
