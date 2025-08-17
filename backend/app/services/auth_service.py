@@ -5,25 +5,25 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
 from typing import Optional
-
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
-from app.database import get_db
-from app.services import user_service
-from app.schemas import token_schema, user_schema
+# --- CHANGED ---
+from ..database import get_db
+from . import user_service  # Changed to relative
+from ..schemas import token_schema
+from ..config import settings  # Import settings for secrets
+
+# ---------------
 
 # --- Configuration ---
-# In a real app, load these from a .env file
-SECRET_KEY = "your-super-secret-key-that-is-long-and-random"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
+# Use settings from config.py instead of hardcoding
+SECRET_KEY = settings.SECRET_KEY
+ALGORITHM = settings.ALGORITHM
+ACCESS_TOKEN_EXPIRE_MINUTES = settings.ACCESS_TOKEN_EXPIRE_MINUTES
+# ---------------------
 
-# --- Password Hashing ---
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
-# --- OAuth2 Scheme ---
-# This tells FastAPI where to look for the token
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
@@ -40,20 +40,20 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     if expires_delta:
         expire = datetime.utcnow() + expires_delta
     else:
-        expire = datetime.utcnow() + timedelta(minutes=15)
+        expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
 
-def authenticate_user(db: Session, email: str, password: str) -> Optional[user_schema.User]:
+def authenticate_user(db: Session, email: str, password: str):
     user = user_service.get_user_by_email(db, email=email)
     if not user or not verify_password(password, user.hashed_password):
         return None
     return user
 
 
-def get_current_active_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)) -> user_schema.User:
+def get_current_active_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
