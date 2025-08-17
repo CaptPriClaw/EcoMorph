@@ -12,21 +12,19 @@ from passlib.context import CryptContext
 from ..database import get_db
 from . import user_service  # Changed to relative
 from ..schemas import token_schema
-from ..config import settings  # Import settings for secrets
+from ..config import settings
 
 # ---------------
 
-# --- Configuration ---
-# Use settings from config.py instead of hardcoding
 SECRET_KEY = settings.SECRET_KEY
 ALGORITHM = settings.ALGORITHM
 ACCESS_TOKEN_EXPIRE_MINUTES = settings.ACCESS_TOKEN_EXPIRE_MINUTES
-# ---------------------
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
+# ... (rest of the file is unchanged) ...
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     return pwd_context.verify(plain_password, hashed_password)
 

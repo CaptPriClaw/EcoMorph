@@ -8,7 +8,7 @@ from ..models import product as product_model
 from ..models import transaction as transaction_model
 from ..models.product import ProductStatus
 from ..models.points import PointReason
-from . import point_service # Changed to relative
+from . import point_service
 # ---------------
 
 def execute_purchase(
@@ -16,6 +16,7 @@ def execute_purchase(
     buyer: user_model.User,
     product: product_model.Product
 ):
+    # ... (rest of the file is unchanged) ...
     buyer_balance = point_service.get_user_point_balance(db, user_id=buyer.id)
     if buyer_balance < product.price_points:
         raise ValueError("Insufficient points to complete the purchase.")

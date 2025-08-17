@@ -6,7 +6,7 @@ from typing import Optional
 # --- CHANGED ---
 from ..models import user as user_model
 from ..schemas import user_schema
-from . import auth_service # Changed to relative
+from . import auth_service
 # ---------------
 
 def get_user(db: Session, user_id: int):
