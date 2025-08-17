@@ -3,14 +3,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-# --- CHANGED: Use relative imports ---
-from .database import engine
-from . import models
+# --- CHANGED: Import Base and engine directly from database ---
+from .database import Base, engine
+# --- This ensures all models are registered with SQLAlchemy's Base ---
+from .models import user, waste, product, transaction, points
+# --- Import all route modules ---
 from .routes import auth, users, waste, product, marketplace, points
-# -------------------------------------
 
-# This line creates all the database tables
-models.Base.metadata.create_all(bind=engine)
+# --- This line creates all the database tables ---
+# It now correctly uses the imported Base object.
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="EcoMorph API",
