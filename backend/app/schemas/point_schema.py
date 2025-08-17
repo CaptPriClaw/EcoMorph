@@ -1,12 +1,8 @@
 # backend/app/schemas/point_schema.py
-
 from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
-
-# --- CHANGED ---
 from ..models.points import PointReason
-# ---------------
 
 class PointsLedgerBase(BaseModel):
     points_change: int
@@ -22,4 +18,4 @@ class PointsLedger(PointsLedgerBase):
     created_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True

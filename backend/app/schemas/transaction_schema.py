@@ -1,15 +1,10 @@
 # backend/app/schemas/transaction_schema.py
-
 from pydantic import BaseModel
 from datetime import datetime
 
 class TransactionBase(BaseModel):
     product_id: int
     points_exchanged: int
-
-class TransactionCreate(TransactionBase):
-    buyer_id: int
-    seller_id: int
 
 class Transaction(TransactionBase):
     id: int
@@ -18,4 +13,4 @@ class Transaction(TransactionBase):
     transaction_time: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True # <-- CORRECTED

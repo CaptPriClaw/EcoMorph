@@ -1,12 +1,8 @@
 # backend/app/schemas/product_schema.py
-
 from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
-
-# --- CHANGED ---
 from ..models.product import ProductStatus
-# ---------------
 
 class ProductBase(BaseModel):
     name: str
@@ -32,4 +28,4 @@ class Product(ProductBase):
     updated_at: Optional[datetime] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
