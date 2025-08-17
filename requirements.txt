@@ -11,6 +11,7 @@ psycopg2-binary    # PostgreSQL driver. For SQLite, this is not needed.
 # --- Data Validation & Settings ---
 pydantic[email]    # For data validation and loading settings from .env
 python-dotenv      # For reading the .env file
+pydantic-settings
 
 # --- Authentication & Security ---
 passlib[bcrypt]    # For hashing passwords

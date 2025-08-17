@@ -5,59 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9803cfd-e6ae-4eb2-b781-3f2100864f75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/EcoMorph.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/Styles/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/api/apiClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/components/app-shell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/components/data-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/dashboard-view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/login-view.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-panel/src/views/waste-approval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/point_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/transaction_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/services/marketplace_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/services/product_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/services/user_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/utils/security.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/utils/token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/apiClient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/authService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/pointService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/productService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/wasteService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/ecomorph-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ProductCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/common/Modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/useAuth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AuthForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Marketplace.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ProductView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml-services/recommender_system/build_recommender.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ml-services/residual_classifier/create_sample_images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/backend/test_points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/backend/test_products.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/backend/test_users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/backend/test_waste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
