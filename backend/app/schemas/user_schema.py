@@ -4,12 +4,15 @@ from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 from datetime import datetime
 
-# Import schemas that might be nested in a user response
-from .waste_schema import Waste
-from .product_schema import Product
-from .points_schema import PointsLedger
-from app.models.user import UserRole
+# --- CHANGED ---
+from ..models.user import UserRole
 
+
+# The other imports for Waste and Product schemas are already relative, which is good.
+# We will handle the circular dependency later.
+# from .waste_schema import Waste
+# from .product_schema import Product
+# ---------------
 
 class UserBase(BaseModel):
     email: EmailStr
@@ -26,18 +29,11 @@ class UserUpdate(BaseModel):
     full_name: Optional[str] = None
 
 
-# This is the main schema for reading/returning user data from the API
 class User(UserBase):
     id: int
     role: UserRole
     is_active: bool
     created_at: datetime
-
-    # We will add these relationships after all schemas are defined
-    # to avoid circular imports. For now, they are commented out.
-    # wastes: List[Waste] = []
-    # products: List[Product] = []
-    # points_ledger: List[PointsLedger] = []
 
     class Config:
         orm_mode = True

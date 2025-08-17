@@ -4,11 +4,11 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
-from app.models.waste import WasteStatus
+# --- CHANGED ---
+from ..models.waste import WasteStatus
 
-# Forward declaration for nested user schema
-from .user_schema import User
 
+# ---------------
 
 class WasteBase(BaseModel):
     material_type: str
@@ -35,8 +35,5 @@ class Waste(WasteBase):
     created_at: datetime
     updated_at: Optional[datetime] = None
 
-    # Nested schema to include uploader's info when reading waste data
-    # uploader: User # This will cause circular import issues if not handled carefully
-
     class Config:
-        orm_mode = True  # Allows Pydantic to map to ORM objects
+        orm_mode = True

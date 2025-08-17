@@ -4,8 +4,9 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
-from app.models.product import ProductStatus
-
+# --- CHANGED ---
+from ..models.product import ProductStatus
+# ---------------
 
 class ProductBase(BaseModel):
     name: str
@@ -13,10 +14,8 @@ class ProductBase(BaseModel):
     image_url: str
     price_points: int
 
-
 class ProductCreate(ProductBase):
     pass
-
 
 class ProductUpdate(BaseModel):
     name: Optional[str] = None
@@ -24,7 +23,6 @@ class ProductUpdate(BaseModel):
     image_url: Optional[str] = None
     price_points: Optional[int] = None
     status: Optional[ProductStatus] = None
-
 
 class Product(ProductBase):
     id: int

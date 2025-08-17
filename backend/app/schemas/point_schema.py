@@ -4,19 +4,17 @@ from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
 
-# Import the enum from the model to ensure consistency
-from app.models.points import PointReason
-
+# --- CHANGED ---
+from ..models.points import PointReason
+# ---------------
 
 class PointsLedgerBase(BaseModel):
     points_change: int
     reason: PointReason
     description: Optional[str] = None
 
-
 class PointsLedgerCreate(PointsLedgerBase):
     user_id: int
-
 
 class PointsLedger(PointsLedgerBase):
     id: int
