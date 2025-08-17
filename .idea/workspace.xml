@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9803cfd-e6ae-4eb2-b781-3f2100864f75" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/schemas/token_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/point_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/point_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/product_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/product_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/transaction_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/transaction_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/user_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/user_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/schemas/waste_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/schemas/waste_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/services/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

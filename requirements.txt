@@ -28,3 +28,4 @@ xgboost            # For the credit predictor model
 nltk               # For natural language processing in the recommender
 openai             # For the AI design generator using GPT models
 Pillow             # For handling image data for the residual classifier
+python-multipart
