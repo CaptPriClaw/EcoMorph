@@ -44,3 +44,18 @@ EXPOSE 8000
 
 # The command to run when the container starts
 CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+# Dockerfile
+# ... (previous lines in your Dockerfile) ...
+
+# Install the Python dependencies into the virtual environment
+RUN pip install --no-cache-dir -r requirements.txt
+
+# --- ADD THESE LINES ---
+# Copy the scripts folder to run the NLTK downloader
+COPY ./scripts ./scripts
+RUN python scripts/download_nltk_data.py
+# -----------------------
+
+# --- Stage 2: Final Stage ---
+# ... (rest of the Dockerfile) ...
